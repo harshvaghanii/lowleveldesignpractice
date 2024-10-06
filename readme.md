@@ -55,7 +55,7 @@ This project is a low-level design of a Parking Lot Management System aimed at m
 
 ## Design
 
-## For Use-Case and Class diagrams, please click [here](https://github.com/harshvaghanii/lowleveldesignpractice/tree/master/ParkingLot/docs).
+# The use-case and class diagrams are uploaded in ParkingLot/docs directory. For quick access, please click [here](https://github.com/harshvaghanii/lowleveldesignpractice/tree/master/ParkingLot/docs).
 
 ### Class Diagrams
 
