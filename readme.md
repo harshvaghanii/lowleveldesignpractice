@@ -55,6 +55,8 @@ This project is a low-level design of a Parking Lot Management System aimed at m
 
 ## Design
 
+## For Use-Case and Class diagrams, please click [here](https://github.com/harshvaghanii/lowleveldesignpractice/tree/master/ParkingLot/docs).
+
 ### Class Diagrams
 
 The system design follows object-oriented principles with classes representing key components of the system such as `ParkingLot`, `Ticket`, `Vehicle`, `ParkingSpace`, `Payment`, etc. Detailed class diagrams are included in the repository.
