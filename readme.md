@@ -11,9 +11,6 @@ This repository contains the low-level design (LLD) of a Parking Lot Management 
   - [Use Case Diagram](#use-case-diagram)
 - [How It Works](#how-it-works)
 - [Future Enhancements](#future-enhancements)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
