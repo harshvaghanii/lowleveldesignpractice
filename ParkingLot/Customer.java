@@ -1,17 +1,13 @@
 public class Customer {
-    private final int id;
-    private final String name;
+    private String name;
+    private Vehicle vehicle;
 
-    public Customer(int id, String name) {
-        this.id = id;
+    public Customer(String name, String vehicleNumber) {
         this.name = name;
+        this.vehicle = new Vehicle(vehicleNumber);
     }
 
-    public int getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 }

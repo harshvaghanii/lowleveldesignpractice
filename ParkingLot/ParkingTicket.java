@@ -1,36 +1,38 @@
+import java.sql.Time;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class ParkingTicket {
-    private final int id;
-    private final String vehicleRegistrationNumber;
-    private final LocalDateTime arrivalTime;
-    private LocalDateTime exitTime;
-    private double parkingCharges;
+    static int idCounter = 0;
+    private int id;
+    private String vehicleRegistrationNumber;
 
-    public ParkingTicket(int id, String vehicleRegistrationNumber) {
-        this.id = id;
-        this.vehicleRegistrationNumber = vehicleRegistrationNumber;
+
+    private LocalDateTime arrivalTime;
+    private String parkingSpotNumber;
+
+    public int getId() {
+        return id;
+    }
+
+    public ParkingTicket(Vehicle vehicle, ParkingSpot availableSpot) {
+        this.id = ++idCounter;
+        this.vehicleRegistrationNumber = vehicle.getVehicleNumber();
+        this.parkingSpotNumber = availableSpot.getSpotNumber();
         this.arrivalTime = LocalDateTime.now();
     }
 
-    public int getId() {
-        return this.id;
-    }
-
-    public String getVehicleRegistrationNumber() {
-        return this.vehicleRegistrationNumber;
-    }
-
     public LocalDateTime getArrivalTime() {
-        return this.arrivalTime;
+        return arrivalTime;
     }
 
-    public LocalDateTime getExitTime() {
-        return this.exitTime;
+    @Override
+    public String toString() {
+        return "Parking Ticket{" +
+                "id=" + id +
+                ", vehicleRegistrationNumber='" + vehicleRegistrationNumber + '\'' +
+                ", arrivalTime=" + arrivalTime +
+                ", parkingSpotNumber='" + parkingSpotNumber + '\'' +
+                '}';
     }
-
-    public void setExitTime(LocalDateTime time) {
-        this.exitTime = time;
-    }
-
 }

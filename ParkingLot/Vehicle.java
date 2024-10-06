@@ -1,7 +1,11 @@
 public class Vehicle {
-    private final String registrationNumber;
+    String vehicleNumber;
 
-    public Vehicle(String registrationNumber) {
-        this.registrationNumber = registrationNumber;
+    public Vehicle(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
+    }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
     }
 }
